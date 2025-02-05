@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>To do list</title>
+  </head>
+  <body style="background-color: white">
+    <div class="container">
+      <h1 class="display-4 text-center py-1">TODO List</h1>
+      <div class="jumbotron p-3 shadow-sm">
+        <form id="create-form" action="/create-item" method="POST">
+          <div class="d-flex align-items-center">
+            <input
+              id="create-field"
+              name="item"
+              autofocus
+              autocomplete="off"
+              class="form-control mr-3"
+              type="text"
+              style="flex: 1"
+            />
+            <button class="btn btn-primary" style="border-radius: 20px">
+              Create
+            </button>
+          </div>
+        </form>
+      </div>
+      <button id="clean-all" class="btn btn-danger" style="border-radius: 20px">
+        delete all
+      </button>
+    </div>
+  </body>
+</html>
